@@ -33,11 +33,10 @@ public class ThreadDemo extends Thread {
                 {
                     releaseCount++;
                     System.out.println(this.getName() + " at pos " + stringWalker.getCurrentPosition() + " is char " + Character.toString(stringWalker.getCurrentCharacter()));
-                    Thread.sleep(100);
+                    Thread.sleep(200);
                 }
                 lock.unlock();
-                Thread.sleep(100);
-            
+                System.out.println("Thread " +  this.getName() + " is yielding to another thread.");
             } catch (InterruptedException e) 
             {
                 System.out.println("Thread " +  this.getName() + " interrupted.");

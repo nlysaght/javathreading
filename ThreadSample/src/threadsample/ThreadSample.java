@@ -27,7 +27,7 @@ public class ThreadSample {
         int yieldAfter = 0;
         while(yieldAfter < 3 || yieldAfter > 6)
         {
-            System.out.println("Enter the number of characters to processing on [3 to 6]");
+            System.out.print("Enter the number of characters to processing on (3 to 6)  ?");
             String yieldValueString = br.readLine();
             yieldAfter = Integer.parseInt(yieldValueString);
         }
